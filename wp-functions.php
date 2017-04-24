@@ -91,7 +91,7 @@ if ( ! function_exists('wpf_register_post_type_function') ) {
   		'show_in_admin_bar'     => true,
   		'show_in_nav_menus'     => true,
   		'can_export'            => true,
-  		'has_archive'           => true,
+  		'has_archive'           => __( 'functions', 'wpfunctions' ),
   		'exclude_from_search'   => false,
   		'publicly_queryable'    => true,
   		'query_var'             => 'function',
@@ -158,3 +158,17 @@ function wpf_wp_seek_list_functions() {
     echo  '<a href="' . $fuction_url . '">' . $function . '</a>' . '<br/>';
   }
 }
+
+// Function to change email address
+function fvr_sender_email( $original_email_address ) {
+  $email = get_bloginfo( 'admin_email' );
+  return $email;
+}
+add_filter( 'wp_mail_from', 'fvr_sender_email' );
+
+// Function to change sender name
+function fvr_sender_name( $original_email_from ) {
+  $sender_name = get_bloginfo( 'name' );
+  return $sender_name;
+}
+add_filter( 'wp_mail_from_name', 'fvr_sender_name' );

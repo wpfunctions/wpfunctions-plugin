@@ -1,0 +1,18 @@
+{
+  "name": "wp-functions",
+  "version": "1.0.0",
+  "devDependencies": {
+    "autoprefixer": "*",
+    "cssnano": "*",
+    "grunt": "*",
+    "grunt-contrib-compress": "*",
+    "grunt-contrib-sass": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-postcss": "*",
+    "lodash": "*",
+    "pixrem": "*"
+  },
+  "description": "",
+  "author": "",
+  "license": ""
+}
