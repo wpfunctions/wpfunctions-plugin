@@ -3,7 +3,7 @@
  * Plugin Name: WP Functions
  * Plugin URI:
  * Description: WP Functions Plugin
- * Version:     0.0.1
+ * Version:     0.0.01
  * Author:      WP Functions
  * Author URI:  https://wpfunctions.org
  */
